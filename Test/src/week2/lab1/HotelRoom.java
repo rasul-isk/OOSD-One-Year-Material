@@ -12,10 +12,16 @@ public class HotelRoom {
 		setRoomNumber(0);
 		setRoomType("");
 	}
+				
+	public HotelRoom(int roomNumber, String roomType) {
+		super();
+		setRoomNumber(roomNumber);
+		setRoomType(roomType);
+	}
 
-	
-	
-	
+
+
+
 	///Getters & Setter
 
 	public int getRoomNumber() {
