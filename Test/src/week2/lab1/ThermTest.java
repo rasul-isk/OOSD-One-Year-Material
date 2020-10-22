@@ -16,5 +16,26 @@ public class ThermTest
 		thermA.setCelsius(20.0);
 		System.out.println("Temp. of Thermometer A is " + thermA.getCelsius() );
 		
+		Thermometer thermB = new Thermometer(10.0);
+		
+		double tempB= thermB.getCelsius();
+		
+		System.out.println("Temp. of Thermometer B in Fahrenheit is " + tempB);
+		
+		//Get Farenheit
+		
+		tempB = thermB.getFahrenheit(); //Should be 50F if set to 10C
+		System.out.println("Temp. of Thermometer B in Fahrenheit is " + tempB);
+		
+		
+		//Set Fahrenheit
+		
+		thermB.setFahrenheit(100); //37.77 In Celsius
+		
+		tempB = thermB.getCelsius();
+		
+		System.out.println("Temp. of Thermometer B is " + tempB);		
+		
+		
 	} // end main
 } // end class ThermTest
