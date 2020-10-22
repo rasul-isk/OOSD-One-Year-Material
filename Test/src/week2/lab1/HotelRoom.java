@@ -38,7 +38,12 @@ public class HotelRoom {
 
 
 	public void setRoomNumber(int roomNumber) {
+		if(roomNumber > 0 && roomNumber <= 100) {
 		this.roomNumber = roomNumber;
+		} 
+		else {
+			System.out.println("roomNumber is not range!!!");
+		}
 	}
 
 
