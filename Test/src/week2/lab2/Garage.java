@@ -12,6 +12,10 @@ public class Garage {
 		//4. Exit
 		
 		int choice = 0;
+		int carTotal = 0;
+		Car[] cars = new Car[10];
+		
+		
 		
 		while(choice !=4) {
 			Scanner in = new Scanner(System.in);
@@ -25,10 +29,38 @@ public class Garage {
 			choice = in.nextInt();
 			
 			if(choice == 1) {
-				System.out.println("Choise1");
+				for(Car c:cars) {
+					if(c != null) System.out.println(c.toString());
+				}
 			}
 			else if(choice == 2) {
-				System.out.println("Choise2");
+				if(carTotal < 9) {
+				Scanner incar = new Scanner(System.in);
+				String make;
+				String model;
+				double engineSize;
+				double price;
+
+				System.out.println("Please enter car make:");
+				make = incar.nextLine();
+				
+				System.out.println("Please enter car model:");
+				model = incar.nextLine();
+				
+				System.out.println("Please enter car engine size:");
+				engineSize = incar.nextDouble();
+				
+				System.out.println("Please enter car price:");
+				price = incar.nextDouble();
+				
+				Car c = new Car(make,model,engineSize,price);
+				
+				cars[carTotal] = c;
+				carTotal ++;
+				}
+				else {
+					System.out.println("You have too many cars!!!");
+				}
 			}
 			else if(choice == 3) {
 				System.out.println("Choise3");
