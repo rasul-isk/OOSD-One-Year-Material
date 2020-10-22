@@ -55,6 +55,10 @@ public class Garage {
 				
 				Car c = new Car(make,model,engineSize,price);
 				
+				if(carTotal > 1) {
+					c.sellCar();
+				}
+				
 				cars[carTotal] = c;
 				carTotal ++;
 				}
@@ -63,7 +67,10 @@ public class Garage {
 				}
 			}
 			else if(choice == 3) {
-				System.out.println("Choise3");
+				for(Car c:cars) 
+					if(c!=null) {
+						if(c.isSold()) System.out.println(c.toString());
+					}
 			}
 			else if(choice == 4) {
 				System.out.println("Goodbye!!!");
