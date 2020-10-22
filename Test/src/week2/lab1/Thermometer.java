@@ -32,7 +32,7 @@ public class Thermometer
 	}
 	
 	public double getFahrenheit() {
-		return (((celsius*9)/55)+ 32);
+		return (((celsius*9)/5)+ 32);
 	}
 	
 } // end class Thermometer
