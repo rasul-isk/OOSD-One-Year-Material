@@ -61,12 +61,22 @@ public class Book {
 		this.status = status;
 	}
 
-	//toString
+	//toString	
+	@Override
+	public String toString() {
+		return "Book [name=" + name + ", author=" + author + ", ISBN=" + ISBN + ", genre=" + genre + ", status="
+				+ status + "]";
+	}
+	
 	
 	//Misc Methods
 	public void Borrow() {
 		setStatus('B');
 	}
+
+
+
+
 	
 	
 }
