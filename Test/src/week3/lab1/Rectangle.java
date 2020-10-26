@@ -79,7 +79,7 @@ public class Rectangle {
 			w+="*";
 		}
 		
-		System.out.println(w);
+		System.out.println(w); //print top
 		
 		for(int j=0;j<length-2;j++) {
 			System.out.print("*");
@@ -88,7 +88,7 @@ public class Rectangle {
 			}
 			System.out.println("*");
 		}
-		System.out.println(w);
+		System.out.println(w);//print bottom
 	}
 	
 	
