@@ -38,7 +38,7 @@ public class Rectangle {
 		return width;
 	}
 	public void setWidth(float width) {
-		if(length > 0.0 && length <= 40.0) {
+		if(width > 0.0 && width <= 40.0) {
 			this.width = width;
 		}
 		else {
@@ -59,4 +59,25 @@ public class Rectangle {
 	public String toString() {
 		return "Rectangle [length=" + length + ", width=" + width + "]";
 	}	
+	
+	
+	
+	//Misc Methods
+	public float getArea() {
+		return length * width;
+	}
+	
+	public float getPerimeter() {
+		return (length + width) * 2;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
