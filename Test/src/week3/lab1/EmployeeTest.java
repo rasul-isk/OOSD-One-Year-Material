@@ -20,6 +20,8 @@ public class EmployeeTest {
 		
 		e1 = null;
 		e2 = null;
+		e3 = null;
+		e4 = null;
 		
 		System.gc(); // explicit call to garbage collector
 		
