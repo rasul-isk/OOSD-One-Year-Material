@@ -43,13 +43,20 @@ public class Rectangle {
 		}
 		else {
 			System.out.println("Width must be between 0.0 and 40.0");
-		}
-		
+		}		
 	}
+
+
+
+
 
 	
 	
 	//toString
 	
-
+	
+	@Override
+	public String toString() {
+		return "Rectangle [length=" + length + ", width=" + width + "]";
+	}	
 }
