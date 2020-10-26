@@ -60,6 +60,10 @@ public class Book {
 	public void setStatus(char status) {
 		this.status = status;
 	}
+	
+	public static int getNoOfBooks() {
+		return noOfBooks;
+	}
 
 	//toString	
 	@Override
@@ -69,6 +73,10 @@ public class Book {
 	}
 	
 	
+
+
+
+
 	//Misc Methods
 	public void Borrow() {
 		setStatus('B');

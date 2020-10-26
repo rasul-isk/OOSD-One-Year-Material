@@ -24,6 +24,21 @@ public class Library {
 			String genre = in.nextLine();
 			
 			Book b = new Book(name,author,genre);
+			
+			System.out.println("Number of books created: " + Book.getNoOfBooks());
+			
+			books[i] = b;
+			
+			if(i==1) {
+				b.Borrow();
+			}
 		}
-	}
+		
+		for(Book b: books) {
+			if(b!=null) {
+				System.out.println(b);
+			}
+
+		}
+	}//end main
 }
