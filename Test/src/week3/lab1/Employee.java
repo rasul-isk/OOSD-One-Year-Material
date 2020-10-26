@@ -5,17 +5,22 @@ public class Employee {
 	private String fname;
 	private String lname;
 	private static int count; //no. of objects instantiatied
+	private static int staffNumber = 1;
+	private int employeeNumber;
 	
+
 	//Constructors
 	public Employee() {
 		setFname("");
 		setLname("");
-		++count;
+
 	}
 
 	public Employee(String fname, String lname) {
 		setFname(fname);
 		setLname(lname);
+		setEmployeeNumber(staffNumber);
+		staffNumber++;
 		++count;
 	}
 	
@@ -47,8 +52,25 @@ public class Employee {
 	public static void setCount(int count) {
 		Employee.count = count;
 	}
+	
+	
+	public static int getStaffNumber() {
+		return staffNumber;
+	}
 
+	public static void setStaffNumber(int staffNumber) {
+		Employee.staffNumber = staffNumber;
+	}
 
+	public int getEmployeeNumber() {
+		return employeeNumber;
+	}
+
+	public void setEmployeeNumber(int employeeNumber) {
+		this.employeeNumber = employeeNumber;
+	}
+
+	
 	
 	//toString
 	@Override
