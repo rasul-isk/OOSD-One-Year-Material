@@ -22,6 +22,8 @@ public class RectangleDriver {
 	
 	System.out.println("The perimeter is: " + rect.getPerimeter());	
 	
+	rect.printRectangle();
+	
 	
 	}
 }
