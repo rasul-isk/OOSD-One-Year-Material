@@ -1,6 +1,6 @@
 package week4.lab1;
 
-public class SavingAccount {
+public class SavingsAccount {
 
 	//Variables
 	private int accNo; //one per object instance
@@ -13,13 +13,13 @@ public class SavingAccount {
 
 
 
-	public SavingAccount() {
+	public SavingsAccount() {
 		++nextAccNo;
 		setAccNo(nextAccNo);
 	}
 
 	
-	public SavingAccount(double savingsBalance) {
+	public SavingsAccount(double savingsBalance) {
 		++nextAccNo;
 		setAccNo(nextAccNo);
 		setSavingsBalance(savingsBalance);
@@ -55,7 +55,7 @@ public class SavingAccount {
 
 
 	public static void modifyInterestRate(float annualInterestRate) {
-		SavingAccount.annualInterestRate = annualInterestRate;
+		SavingsAccount.annualInterestRate = annualInterestRate;
 	}
 	
 	
