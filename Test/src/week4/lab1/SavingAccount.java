@@ -1,0 +1,89 @@
+package week4.lab1;
+
+public class SavingAccount {
+
+	//Variables
+	private int accNo; //one per object instance
+	private static int nextAccNo = 0; //shared by all object instances
+	private static float annualInterestRate = 0.0f;
+	private double savingsBalance;
+	
+	
+	//Constructors
+
+
+
+	public SavingAccount() {
+		++nextAccNo;
+		setAccNo(nextAccNo);
+	}
+
+	
+	public SavingAccount(double savingsBalance) {
+		++nextAccNo;
+		setAccNo(nextAccNo);
+		setSavingsBalance(savingsBalance);
+	}
+
+
+
+
+
+	//Getters & Setters
+	
+
+	public int getAccNo() {
+		return accNo;
+	}
+
+
+
+	public void setAccNo(int accNo) {
+		this.accNo = accNo;
+	}
+
+
+
+
+
+	public static float getAnnualInterestRate() {
+		return annualInterestRate;
+	}
+
+
+
+
+
+	public static void modifyInterestRate(float annualInterestRate) {
+		SavingAccount.annualInterestRate = annualInterestRate;
+	}
+	
+	
+	public double getSavingsBalance() {
+		return savingsBalance;
+	}
+
+
+
+	public void setSavingsBalance(double savingsBalance) {
+		this.savingsBalance = savingsBalance;
+	}
+	
+	
+	//Misc Methods
+	public void calculateMonthlyInterest() {
+		savingsBalance+=((getSavingsBalance()*getAnnualInterestRate())/12);
+	}
+
+
+	
+	
+	//toString
+
+	@Override
+	public String toString() {
+		return "SavingAccount [accNo=" + accNo + ", savingsBalance=" + savingsBalance + "]";
+	}	
+	
+	
+}
