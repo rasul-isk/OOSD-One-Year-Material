@@ -1,6 +1,8 @@
 package Template_For_Classes;
 
-import java.util.Scanner;  //for using input by human "x = in.nextLine();'
+import java.util.Scanner;  //for using input by human 
+
+import week3.lab2.Book;
 
 
 //			Student Name: 		Rasul Iskandarov
@@ -11,6 +13,13 @@ import java.util.Scanner;  //for using input by human "x = in.nextLine();'
 
 public class Template {
 
+	Book[] books = new Book[3]; //array creating
+	
+	Scanner in = new Scanner(System.in); //for using input by human 
+	
+	
+	// Example:
+	//"x = in.nextLine();"
 	
 	
 	//Variables
