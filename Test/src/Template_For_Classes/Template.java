@@ -20,7 +20,7 @@ public class Template {
 	
 	// Example:
 	//"x = in.nextLine();"
-	
+	//"x = in.nextDouble();
 	
 	//Variables
 	
