@@ -45,7 +45,7 @@ public class AlarmClock {
 	}
 	
 	
-	public String showCurrentTim() {
+	public String showCurrentTime() {
 		return (currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
 	}
 	
@@ -58,11 +58,18 @@ public class AlarmClock {
 		set = false;
 	}
 	
+	/**
+	 * @return
+	 */
 	public boolean checkAlarmTime() {
 		int alarmHour = alarmTime.getHour();
 		int alarmMinute = alarmTime.getMinute();
 		
-		if(currentTime.getHour() == alarmHour && currentTime.getMinute() == alarmMinute)
+		if(currentTime.getHour() == alarmHour && currentTime.getMinute() == alarmMinute && set == true) {
+			set = false;
+			return true;
+		}
+		else { return false; }
 	}
 	
 	
