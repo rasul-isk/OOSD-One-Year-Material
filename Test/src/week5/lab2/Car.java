@@ -15,6 +15,7 @@ public class Car {
 	public Car(String registrationNumber) {
 		
 		setRegistrationNumber(registrationNumber);
+		
 		for(int i = 0; i <= wheels.length-1; i++) {
 			Wheel wheel = new Wheel(i+1);
 			wheels[i] = wheel;
