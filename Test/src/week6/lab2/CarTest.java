@@ -25,7 +25,13 @@ public class CarTest{
 		
 		System.out.println(h);
 		
+		RoadVehicle[] rv = new RoadVehicle[3];
 		
+		rv[0] = car1;
+		rv[1] = car2;
+		rv[2] = h;
+		
+		for(RoadVehicle r: rv) System.out.println(r);
 		
 	}
 }
