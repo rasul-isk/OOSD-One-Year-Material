@@ -1,3 +1,3 @@
 # OOSD-Material 
 
-This repository was created for Studying Java in IT Carlow.
+This repository was created for Studying Java in Institute of Technology Carlow.
